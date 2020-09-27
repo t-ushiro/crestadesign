@@ -187,6 +187,7 @@ transition: .3s;
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.7;
+  margin-bottom: 60px;
 }
 .concept-content {
   display: flex;
@@ -237,9 +238,11 @@ transition: .3s;
 }
 .service-item {
   width: 33.3%;
+  background-repeat: no-repeat;
 }
 .service-item.service1 {
   background-image: url(../img/service-img01@2x.jpg);
+  
 }
 .service-item.service2 {
   background-image: url(../img/service-img02@2x.jpg);
@@ -422,9 +425,11 @@ body.noScroll{
     /* font-size: ; */
   }
   .concept-text{
+    max-width: none;
 margin-bottom: 30px;
   }
   .concept-img-wrapper{
+    max-width: none;
     width: 100%;
     margin: 0;
   }
@@ -450,7 +455,9 @@ margin-bottom: 30px;
   }
   .service-item{
     width: 100%;
+    background-size: 100%;
     margin-bottom: 30px;
+    /* object-fit: cover */
   }
   .service-item a{
     line-height: 250px;
